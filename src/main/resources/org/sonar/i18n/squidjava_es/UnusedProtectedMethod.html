@@ -1,0 +1,11 @@
+<p>Los métodos protegidos que nunca se usan corresponden a código
+	muerto. El código muerto es código inútil e inoperante que debe 
+	suprimirse. Esto
+	simplifica el mantenimiento al disminuir el tamaño del código, y por 
+	ello simplifica el entendimiento del programa evitando la introducción
+	de nuevos errores.</p>
+<p>Dentro de los casos aplicables, Sonar no considera código muerto :</p>
+<ul>
+	<li>Métodos protegidos que redefinen un método de otra clase antecesora.</li>
+	<li>Métodos protegidos de una clase abstracta.</li>
+</ul>

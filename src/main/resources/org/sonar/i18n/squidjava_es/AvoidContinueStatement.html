@@ -1,0 +1,16 @@
+<p>El uso de la instrucción 'continue' aumenta la complejidad
+	esencial del código y dificulta que el código se refactorice reemplazando
+	todas las estructuras de control bien estructuradas por una sola
+	instrucción.</p>
+<p>Por ejemplo, en el siguiente código no se puede aplicar el 
+  patrón de refactorización de "extracción de método" :</p>
+<pre>
+mylabel : for(int i = 0 ; i< 3; i++) {
+  for (int j = 0; j < 4 ; j++) {
+    doSomething();
+    if (checkSomething()) {
+      continue mylabel;
+    }
+  }
+}
+</pre>

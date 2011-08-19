@@ -1,0 +1,18 @@
+<p>El uso de la instrucción 'break' aumenta la complejidad del código
+	e impide la refactorización de todas las estructuras de control existentes
+	por una sola instrucción.</p>
+<p>Por ejemplo, en el siguiente código, no es posible aplicar el
+	patrón de refactorización de "extracción de método" :
+</p>
+<pre>
+mylabel : for (int i = 0 ; i< 3; i++) {
+  for (int j = 0; j < 4 ; j++) {
+    doSomething();
+    if (checkSomething()) {
+      break mylabel;
+    }
+  }
+}
+</pre>
+<p>El uso de 'break' sólo se autoriza dentro de un bloque
+	'switch'.</p>

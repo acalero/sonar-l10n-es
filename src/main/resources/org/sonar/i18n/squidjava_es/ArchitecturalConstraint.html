@@ -1,0 +1,11 @@
+<p>Un código está conforme a un modelo de arquitectura cuando se adhiere
+	plenamente a un conjunto de restricciones de arquitectura. Una restricción
+	permite rechazar referencias entre clases en base a uso de expresiones.</p>
+<ul>
+	Por ejemplo, se puede usar esta regla para :
+	<li>Impedir el acceso entre clases **web** y clases **.dao.**</li>
+	<li>Impedir el uso de java.util.Vector, java.util.Hashtable y
+			java.util.Enumeration en cualquier clase</li>
+	<li>Impedir el acceso a java.sql.** en clases **.ui.** y
+		**.web.**</li>
+</ul>
