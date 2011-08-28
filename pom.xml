@@ -10,7 +10,7 @@
   <groupId>org.codehaus.sonar-plugins.l10n</groupId>
   <artifactId>sonar-l10n-es-plugin</artifactId>
   <packaging>sonar-plugin</packaging>
-  <version>0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <name>L10n :: Spanish Pack</name>
   <url>http://docs.codehaus.org/display/SONAR/Spanish+Pack</url>
   <inceptionYear>2011</inceptionYear>
@@ -86,9 +86,9 @@
   </build>
 
   <scm>
-    <connection>scm:svn:http://svn.codehaus.org/sonar-plugins/trunk/l10n/es</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/sonar-plugins/trunk/l10n/es</developerConnection>
-    <url>http://svn.sonar-plugins.codehaus.org</url>
+    <connection>scm:svn:http://svn.codehaus.org/sonar-plugins/tags/sonar-l10n-es-plugin-1.0</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/sonar-plugins/tags/sonar-l10n-es-plugin-1.0</developerConnection>
+    <url>scm:svn:https://svn.codehaus.org/sonar-plugins/tags/sonar-l10n-es-plugin-1.0</url>
   </scm>
 
   <profiles>
