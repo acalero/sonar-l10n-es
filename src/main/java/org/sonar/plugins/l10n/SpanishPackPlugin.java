@@ -24,8 +24,15 @@ import org.sonar.api.SonarPlugin;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Entry point for the spanish pack plugin
+ */
 public final class SpanishPackPlugin extends SonarPlugin {
 
+  /**
+   * Retrieves the extensions included in the plugin. As it is language pack no 
+   * extension is required. 
+   */
   public List getExtensions() {
     return Collections.emptyList();
   }
