@@ -27,9 +27,8 @@ import static org.sonar.test.i18n.I18nMatchers.isBundleUpToDate;
 
 public class SpanishPackPluginTest {
 
-  private static final String SONAR_VERSION = "2.10";
+  private static final String SONAR_VERSION = "2.12";
 
-  @Ignore("Disabled because of https://jira.codehaus.org/browse/SONAR-2846. Will be reactivated with sonar-testing-harness 2.12.")
   @Test
   public void coreBundleShouldBeUpToDate() {
     assertThat("core_es.properties", isBundleUpToDate(SONAR_VERSION));
