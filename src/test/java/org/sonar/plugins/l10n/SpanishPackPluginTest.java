@@ -22,12 +22,13 @@ package org.sonar.plugins.l10n;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.sonar.test.i18n.I18nMatchers.isBundleUpToDate;
 
 public class SpanishPackPluginTest {
 
-  private static final String SONAR_VERSION = "2.12";
+  private static final String SONAR_VERSION = "2.13-RC2";
 
   @Test
   public void coreBundleShouldBeUpToDate() {
@@ -42,6 +43,11 @@ public class SpanishPackPluginTest {
   @Test
   public void squidJavaBundleShouldBeUpToDate() {
     assertThat("squidjava_es.properties", isBundleUpToDate(SONAR_VERSION));
+  }
+  
+  @Test
+  public void testGetExtensions() throws Exception {
+    assertThat(new SpanishPackPlugin().getExtensions().size(), is(0));
   }
 
 }
