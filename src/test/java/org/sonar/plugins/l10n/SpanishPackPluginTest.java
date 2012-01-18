@@ -28,7 +28,7 @@ import static org.sonar.test.i18n.I18nMatchers.isBundleUpToDate;
 
 public class SpanishPackPluginTest {
 
-  private static final String SONAR_VERSION = "2.13-RC2";
+  private static final String SONAR_VERSION = "2.13";
 
   @Test
   public void coreBundleShouldBeUpToDate() {
