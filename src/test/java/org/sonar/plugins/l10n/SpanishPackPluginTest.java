@@ -19,35 +19,33 @@
  */
 package org.sonar.plugins.l10n;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.sonar.test.i18n.I18nMatchers.isBundleUpToDate;
+import java.util.HashMap;
+import java.util.Map;
+
+import static org.sonar.test.i18n.I18nMatchers.assertAllBundlesUpToDate;
 
 public class SpanishPackPluginTest {
 
+  /**
+   * Version of Sonar which is covered by the language pack
+   */
   private static final String SONAR_VERSION = "3.1";
 
-  @Test
-  public void coreBundleShouldBeUpToDate() {
-    assertThat("core_es.properties", isBundleUpToDate(SONAR_VERSION));
-  }
+  /**
+   * Bundles of the forge plugins covered by the language pack
+   */
+
+  private static final Map<String, String> pluginIdsToBundleUrlMap = new HashMap<String, String>() {
+    {
+      put("abacus", "http://svn.codehaus.org/sonar-plugins/tags/sonar-abacus-plugin-0.1/src/main/resources/org/sonar/l10n/abacus.properties");
+    }
+  };
 
   @Test
-  public void gwtBundleShouldBeUpToDate() {
-    assertThat("gwt_es.properties", isBundleUpToDate(SONAR_VERSION));
-  }
-
-  @Test
-  public void squidJavaBundleShouldBeUpToDate() {
-    assertThat("squidjava_es.properties", isBundleUpToDate(SONAR_VERSION));
-  }
-  
-  @Test
-  public void testGetExtensions() throws Exception {
-    assertThat(new SpanishPackPlugin().getExtensions().size(), is(0));
+  public void test() throws Exception {
+    assertAllBundlesUpToDate(SONAR_VERSION, pluginIdsToBundleUrlMap);
   }
 
 }
