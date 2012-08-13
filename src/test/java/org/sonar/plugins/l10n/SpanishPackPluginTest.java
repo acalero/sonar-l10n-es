@@ -43,6 +43,7 @@ public class SpanishPackPluginTest {
       put("branding", "http://svn.codehaus.org/sonar-plugins/tags/sonar-branding-plugin-0.3/src/main/resources/org/sonar/l10n/branding.properties");
       put("jira", "http://svn.codehaus.org/sonar-plugins/tags/sonar-jira-plugin-1.0/src/main/resources/org/sonar/l10n/jira.properties");
       put("uselesscodetracker", "http://svn.codehaus.org/sonar-plugins/tags/sonar-useless-code-tracker-plugin-0.5/src/main/resources/org/sonar/l10n/uselesscodetracker.properties");
+      put("violationdensity", "http://svn.codehaus.org/sonar-plugins/tags/sonar-violationdensity-plugin-1.2/src/main/resources/org/sonar/l10n/violationdensity.properties");
 
       // TODO : following plugins have currently no released version to check against => update when a first release with bundles is done.
       put("tabmetrics", "http://svn.codehaus.org/sonar-plugins/trunk/tab-metrics/src/main/resources/org/sonar/l10n/tabmetrics.properties");
