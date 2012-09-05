@@ -31,7 +31,7 @@ public class SpanishPackPluginTest {
   /**
    * Version of Sonar which is covered by the language pack
    */
-  private static final String SONAR_VERSION = "3.1";
+  private static final String SONAR_VERSION = "3.2";
 
   /**
    * Bundles of the forge plugins covered by the language pack
@@ -44,7 +44,8 @@ public class SpanishPackPluginTest {
       put("jira", "http://svn.codehaus.org/sonar-plugins/tags/sonar-jira-plugin-1.0/src/main/resources/org/sonar/l10n/jira.properties");
       put("uselesscodetracker", "http://svn.codehaus.org/sonar-plugins/tags/sonar-useless-code-tracker-plugin-0.5/src/main/resources/org/sonar/l10n/uselesscodetracker.properties");
       put("violationdensity", "http://svn.codehaus.org/sonar-plugins/tags/sonar-violationdensity-plugin-1.2/src/main/resources/org/sonar/l10n/violationdensity.properties");
-
+      put("widgetlab", "http://svn.codehaus.org/sonar-plugins/tags/sonar-widget-lab-plugin-1.3/src/main/resources/org/sonar/l10n/widgetlab.properties");
+      
       // TODO : following plugins have currently no released version to check against => update when a first release with bundles is done.
       put("tabmetrics", "http://svn.codehaus.org/sonar-plugins/trunk/tab-metrics/src/main/resources/org/sonar/l10n/tabmetrics.properties");
     }
