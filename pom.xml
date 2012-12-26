@@ -138,10 +138,6 @@
       <name>Antonio Calero</name>
       <organizationUrl>http://www.excentia.es</organizationUrl>
     </developer>
-    <developer>
-      <name>Paco Castro</name>
-      <organizationUrl>http://www.excentia.es</organizationUrl>
-    </developer>
   </developers>
 
   <build>
