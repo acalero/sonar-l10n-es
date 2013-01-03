@@ -46,7 +46,7 @@
     <bundle.core>3.4</bundle.core>
     <bundle.jira>1.0</bundle.jira>
     <bundle.uselesscodetracker>0.5</bundle.uselesscodetracker>
-    <bundle.squidjava>1.0</bundle.squidjava>
+    <bundle.squidjava>1.1</bundle.squidjava>
     <bundle.violationdensity>1.2</bundle.violationdensity>
     <bundle.widgetlab>1.3</bundle.widgetlab>
     <bundle.motionchart>1.4</bundle.motionchart>    
