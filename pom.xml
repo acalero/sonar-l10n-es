@@ -30,6 +30,11 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://jira.codehaus.org/browse/SONARPLUGINS/component/14855</url>
+  </issueManagement>
 
   <scm>
     <connection>scm:git:git://github.com/SonarCommunity/sonar-l10n-es.git</connection>
@@ -42,14 +47,14 @@
     <sonar.version>3.4</sonar.version>
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
-    <bundle.branding>0.3</bundle.branding>
-    <bundle.core>3.4</bundle.core>
-    <bundle.jira>1.0</bundle.jira>
+    <bundle.branding>0.4</bundle.branding>
+    <bundle.core>3.5</bundle.core>
+    <bundle.jira>1.1</bundle.jira>
     <bundle.uselesscodetracker>0.5</bundle.uselesscodetracker>
-    <bundle.squidjava>1.1</bundle.squidjava>
+    <bundle.squidjava>1.2</bundle.squidjava>
     <bundle.violationdensity>1.2</bundle.violationdensity>
-    <bundle.widgetlab>1.3</bundle.widgetlab>
-    <bundle.motionchart>1.4</bundle.motionchart>    
+    <bundle.widgetlab>1.3.1</bundle.widgetlab>
+    <bundle.motionchart>1.5</bundle.motionchart>    
     <bundle.tabmetrics>1.2</bundle.tabmetrics>
   </properties>
 
