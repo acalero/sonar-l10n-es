@@ -10,7 +10,7 @@
 
   <groupId>org.codehaus.sonar-plugins.l10n</groupId>
   <artifactId>sonar-l10n-es-plugin</artifactId>
-  <version>1.9-SNAPSHOT</version>
+  <version>1.10-SNAPSHOT</version>
   <packaging>sonar-plugin</packaging>
   
   <name>L10n :: Spanish Pack</name>
