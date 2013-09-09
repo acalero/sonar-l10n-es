@@ -48,14 +48,16 @@
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
     <bundle.branding>0.4</bundle.branding>
-    <bundle.core>3.5</bundle.core>
-    <bundle.jira>1.1</bundle.jira>
-    <bundle.uselesscodetracker>0.5</bundle.uselesscodetracker>
+    <bundle.core>3.7</bundle.core>
+    <bundle.jira>1.2</bundle.jira>
+    <bundle.uselesscodetracker>0.6</bundle.uselesscodetracker>
     <bundle.squidjava>1.2</bundle.squidjava>
     <bundle.violationdensity>1.2</bundle.violationdensity>
     <bundle.widgetlab>1.3.1</bundle.widgetlab>
     <bundle.motionchart>1.5</bundle.motionchart>    
-    <bundle.tabmetrics>1.2</bundle.tabmetrics>
+    <bundle.tabmetrics>1.3</bundle.tabmetrics>
+    <bundle.thucydides>0.1</bundle.thucydides>
+    <bundle.web>2.0</bundle.web>
   </properties>
 
   <dependencies>
@@ -135,7 +137,19 @@
       <artifactId>sonar-tab-metrics-plugin</artifactId>
       <version>${bundle.tabmetrics}</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.sonar-plugins</groupId>
+      <artifactId>sonar-web-plugin</artifactId>
+      <version>${bundle.web}</version>
+      <scope>test</scope>
     </dependency>    
+    <dependency>
+      <groupId>org.codehaus.sonar-plugins</groupId>
+      <artifactId>sonar-thucydides-plugin</artifactId>
+      <version>${bundle.thucydides}</version>
+      <scope>test</scope>
+    </dependency>        
   </dependencies>
 
   <developers>
