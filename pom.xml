@@ -45,21 +45,22 @@
 
   <properties>
     <sonar.pluginClass>org.sonar.plugins.l10n.SpanishPackPlugin</sonar.pluginClass>
-    <sonar.version>3.4</sonar.version>
+    <sonar.version>4.1</sonar.version>
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
     <bundle.branding>0.4</bundle.branding>
     <bundle.core>4.3</bundle.core>
     <bundle.jira>1.2</bundle.jira>
-    <bundle.motionchart>1.5</bundle.motionchart>    
-    <bundle.uselesscodetracker>0.6</bundle.uselesscodetracker>
-    <bundle.squidjava>1.5</bundle.squidjava>
-    <bundle.tabmetrics>1.3</bundle.tabmetrics>
+    <bundle.motionchart>1.6</bundle.motionchart>    
+    <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
+    <bundle.squidjava>2.2</bundle.squidjava>
+    <bundle.tabmetrics>1.4</bundle.tabmetrics>
     <bundle.thucydides>0.1</bundle.thucydides>
     <bundle.violationdensity>1.2</bundle.violationdensity>
-    <bundle.web>2.0</bundle.web>
-    <bundle.widgetlab>1.3.1</bundle.widgetlab>
-    <bundle.scmactivity>1.6</bundle.scmactivity>
+    <bundle.web>2.2</bundle.web>
+    <bundle.widgetlab>1.4.1</bundle.widgetlab>
+    <bundle.xml>1.1</bundle.xml>
+    <bundle.javascript>1.6</bundle.javascript>
   </properties>
 
   <dependencies>
@@ -151,7 +152,19 @@
       <artifactId>sonar-thucydides-plugin</artifactId>
       <version>${bundle.thucydides}</version>
       <scope>test</scope>
-    </dependency>        
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.sonar-plugins.xml</groupId>
+      <artifactId>sonar-xml-plugin</artifactId>
+      <version>${bundle.xml}</version>
+      <scope>test</scope>
+    </dependency>     
+    <dependency>
+      <groupId>org.codehaus.sonar-plugins.javascript</groupId>
+      <artifactId>sonar-javascript-plugin</artifactId>
+      <version>${bundle.javascript}</version>
+      <scope>test</scope>
+    </dependency>              
   </dependencies>
 
   <developers>
