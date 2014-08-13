@@ -1,6 +1,6 @@
 /*
  * L10n :: Spanish Pack
- * Copyright (C) 2011 eXcentia
+ * Copyright (C) 2011 excentia
  * dev@sonar.codehaus.org
  *
  * This program is free software; you can redistribute it and/or
