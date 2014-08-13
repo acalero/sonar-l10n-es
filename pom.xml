@@ -49,7 +49,7 @@
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
     <bundle.branding>0.4</bundle.branding>
-    <bundle.core>4.3</bundle.core>
+    <bundle.core>4.4</bundle.core>
     <bundle.jira>1.2</bundle.jira>
     <bundle.motionchart>1.6</bundle.motionchart>    
     <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
@@ -88,14 +88,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.codehaus.sonar.plugins</groupId>
-      <artifactId>sonar-core-plugin</artifactId>
-      <version>${bundle.core}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar.plugins</groupId>
-      <artifactId>sonar-l10n-en-plugin</artifactId>
+      <groupId>org.codehaus.sonar</groupId>
+      <artifactId>sonar-core</artifactId>
       <version>${bundle.core}</version>
       <scope>test</scope>
     </dependency>
