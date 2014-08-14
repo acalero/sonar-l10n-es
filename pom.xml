@@ -45,7 +45,7 @@
 
   <properties>
     <sonar.pluginClass>org.sonar.plugins.l10n.SpanishPackPlugin</sonar.pluginClass>
-    <sonar.version>4.1</sonar.version>
+    <sonar.version>4.4</sonar.version>
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
     <bundle.branding>0.4</bundle.branding>
@@ -53,7 +53,7 @@
     <bundle.jira>1.2</bundle.jira>
     <bundle.motionchart>1.6</bundle.motionchart>    
     <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
-    <bundle.squidjava>2.2</bundle.squidjava>
+    <bundle.java>2.4</bundle.java>
     <bundle.tabmetrics>1.4</bundle.tabmetrics>
     <bundle.thucydides>0.1</bundle.thucydides>
     <bundle.violationdensity>1.2</bundle.violationdensity>
@@ -107,8 +107,8 @@
     </dependency>
     <dependency>
       <groupId>org.codehaus.sonar-plugins.java</groupId>
-      <artifactId>sonar-squid-java-plugin</artifactId>
-      <version>${bundle.squidjava}</version>
+      <artifactId>java-checks</artifactId>
+      <version>${bundle.java}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
