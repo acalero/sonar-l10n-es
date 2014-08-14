@@ -22,8 +22,15 @@ package org.sonar.plugins.l10n;
 import org.junit.Test;
 import org.sonar.test.i18n.I18nMatchers;
 
+import static org.fest.assertions.Assertions.assertThat;
+
 public class SpanishPackPluginTest {
 
+  @Test
+  public void noExtensions() throws Exception {
+    assertThat(new SpanishPackPlugin().getExtensions()).isEmpty();
+  }
+  
   @Test
   public void bundles_should_be_up_to_date() {
     I18nMatchers.assertBundlesUpToDate();
