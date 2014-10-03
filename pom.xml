@@ -49,7 +49,7 @@
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
     <bundle.branding>0.4</bundle.branding>
-    <bundle.core>4.4</bundle.core>
+    <bundle.core>4.5</bundle.core>
     <bundle.jira>1.2</bundle.jira>
     <bundle.motionchart>1.6</bundle.motionchart>    
     <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
@@ -107,7 +107,7 @@
     </dependency>
     <dependency>
       <groupId>org.codehaus.sonar-plugins.java</groupId>
-      <artifactId>java-checks</artifactId>
+      <artifactId>sonar-java-plugin</artifactId>
       <version>${bundle.java}</version>
       <scope>test</scope>
     </dependency>
