@@ -48,10 +48,10 @@
     <sonar.version>4.4</sonar.version>
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
-    <bundle.branding>0.4</bundle.branding>
+    <bundle.branding>0.5</bundle.branding>
     <bundle.core>4.5</bundle.core>
     <bundle.jira>1.2</bundle.jira>
-    <bundle.motionchart>1.6</bundle.motionchart>    
+    <bundle.motionchart>1.7</bundle.motionchart>    
     <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
     <bundle.java>2.4</bundle.java>
     <bundle.tabmetrics>1.4</bundle.tabmetrics>
@@ -60,7 +60,8 @@
     <bundle.web>2.2</bundle.web>
     <bundle.widgetlab>1.4.1</bundle.widgetlab>
     <bundle.xml>1.1</bundle.xml>
-    <bundle.javascript>1.6</bundle.javascript>
+    <bundle.javascript>2.1</bundle.javascript>
+    <bundle.issues-density>1.0</bundle.issues-density>
   </properties>
 
   <dependencies>
@@ -158,7 +159,13 @@
       <artifactId>sonar-javascript-plugin</artifactId>
       <version>${bundle.javascript}</version>
       <scope>test</scope>
-    </dependency>              
+    </dependency>    
+    <dependency>
+      <groupId>org.codehaus.sonar-plugins</groupId>
+      <artifactId>sonar-issues-density-plugin</artifactId>
+      <version>${bundle.issues-density}</version>
+      <scope>test</scope>
+    </dependency>          
   </dependencies>
 
   <developers>
