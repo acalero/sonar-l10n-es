@@ -48,7 +48,7 @@
     <sonar.version>5.0</sonar.version>
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
-    <bundle.branding>0.5</bundle.branding>
+    <bundle.branding>1.0</bundle.branding>
     <bundle.core>5.0</bundle.core>
     <bundle.jira>1.2</bundle.jira>
     <bundle.motionchart>1.7</bundle.motionchart>    
