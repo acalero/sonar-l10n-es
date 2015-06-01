@@ -32,8 +32,8 @@
   </licenses>
   
   <issueManagement>
-    <system>JIRA</system>
-    <url>https://jira.codehaus.org/browse/SONARLOCAL/component/16575</url>
+    <system>GitHub</system>
+    <url>https://github.com/SonarCommunity/sonar-l10n-es/issues</url>
   </issueManagement>
 
   <scm>
