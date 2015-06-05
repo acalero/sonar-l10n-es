@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.codehaus.sonar-plugins</groupId>
     <artifactId>parent</artifactId>
-    <version>18</version>
+    <version>19</version>
   </parent>
 
   <groupId>org.codehaus.sonar-plugins.l10n</groupId>
@@ -32,8 +32,8 @@
   </licenses>
   
   <issueManagement>
-    <system>JIRA</system>
-    <url>https://jira.codehaus.org/browse/SONARLOCAL/component/16575</url>
+    <system>GitHub</system>
+    <url>https://github.com/SonarCommunity/sonar-l10n-es/issues</url>
   </issueManagement>
 
   <scm>
@@ -49,11 +49,11 @@
     <!-- Versions of the plugin translated by this language pack -->
     <bundle.abacus>0.1</bundle.abacus>
     <bundle.branding>1.0</bundle.branding>
-    <bundle.core>5.0</bundle.core>
+    <bundle.core>5.1</bundle.core>
     <bundle.jira>1.2</bundle.jira>
     <bundle.motionchart>1.7</bundle.motionchart>    
     <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
-    <bundle.java>2.4</bundle.java>
+    <bundle.java>2.8</bundle.java>
     <bundle.tabmetrics>1.4</bundle.tabmetrics>
     <bundle.thucydides>0.1</bundle.thucydides>
     <bundle.violationdensity>1.2</bundle.violationdensity>
@@ -69,6 +69,7 @@
       <groupId>org.codehaus.sonar</groupId>
       <artifactId>sonar-plugin-api</artifactId>
       <version>${sonar.version}</version>
+      <scope>provided</scope>      
     </dependency>
     <dependency>
       <groupId>org.codehaus.sonar</groupId>
