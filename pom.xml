@@ -15,7 +15,7 @@
   
   <name>L10n :: Spanish Pack</name>
   <description>Language Pack for Spanish</description>
-  <url>http://docs.codehaus.org/display/SONAR/Spanish+Pack</url>
+  <url>https://github.com/SonarQubeCommunity/sonar-l10n-es</url>
   <inceptionYear>2011</inceptionYear>
 
   <organization>
@@ -33,13 +33,13 @@
   
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/SonarCommunity/sonar-l10n-es/issues</url>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-es/issues</url>
   </issueManagement>
 
   <scm>
-    <connection>scm:git:git://github.com/SonarCommunity/sonar-l10n-es.git</connection>
-    <developerConnection>scm:git:git@github.com:SonarCommunity/sonar-l10n-es.git</developerConnection>
-    <url>https://github.com/SonarCommunity/sonar-l10n-es</url>
+    <connection>scm:git:git://github.com/SonarQubeCommunity/sonar-l10n-es.git</connection>
+    <developerConnection>scm:git:git@github.com:SonarQubeCommunity/sonar-l10n-es.git</developerConnection>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-es</url>
     <tag>HEAD</tag>
   </scm>
 
