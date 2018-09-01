@@ -1,205 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>org.codehaus.sonar-plugins</groupId>
-    <artifactId>parent</artifactId>
-    <version>19</version>
-  </parent>
+    <parent>
+        <groupId>org.sonarsource.parent</groupId>
+        <artifactId>parent</artifactId>
+        <version>46</version>
+    </parent>
 
-  <groupId>org.codehaus.sonar-plugins.l10n</groupId>
-  <artifactId>sonar-l10n-es-plugin</artifactId>
-  <version>1.14-SNAPSHOT</version>
-  <packaging>sonar-plugin</packaging>
-  
-  <name>L10n :: Spanish Pack</name>
-  <description>Language Pack for Spanish</description>
-  <url>https://github.com/SonarQubeCommunity/sonar-l10n-es</url>
-  <inceptionYear>2011</inceptionYear>
+    <groupId>org.sonarqube.l10n.es</groupId>
+    <artifactId>sonar-l10n-es-plugin</artifactId>
+    <version>1.14-SNAPSHOT</version>
+    <packaging>sonar-plugin</packaging>
 
-  <organization>
-    <name>excentia</name>
-    <url>http://www.excentia.es</url>
-  </organization>
-
-  <licenses>
-    <license>
-      <name>GNU LGPL 3</name>
-      <url>http://www.gnu.org/licenses/lgpl.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  
-  <issueManagement>
-    <system>GitHub</system>
-    <url>https://github.com/SonarQubeCommunity/sonar-l10n-es/issues</url>
-  </issueManagement>
-
-  <scm>
-    <connection>scm:git:git://github.com/SonarQubeCommunity/sonar-l10n-es.git</connection>
-    <developerConnection>scm:git:git@github.com:SonarQubeCommunity/sonar-l10n-es.git</developerConnection>
+    <name>L10n :: Spanish Pack</name>
+    <description>Language Pack for Spanish</description>
     <url>https://github.com/SonarQubeCommunity/sonar-l10n-es</url>
-    <tag>HEAD</tag>
-  </scm>
+    <inceptionYear>2011</inceptionYear>
 
-  <properties>
-    <sonar.pluginClass>org.sonar.plugins.l10n.SpanishPackPlugin</sonar.pluginClass>
-    <sonar.version>5.0</sonar.version>
-    <!-- Versions of the plugin translated by this language pack -->
-    <bundle.abacus>0.1</bundle.abacus>
-    <bundle.branding>1.0</bundle.branding>
-    <bundle.core>5.1</bundle.core>
-    <bundle.jira>1.2</bundle.jira>
-    <bundle.motionchart>1.7</bundle.motionchart>    
-    <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
-    <bundle.java>2.8</bundle.java>
-    <bundle.tabmetrics>1.4</bundle.tabmetrics>
-    <bundle.thucydides>0.1</bundle.thucydides>
-    <bundle.violationdensity>1.2</bundle.violationdensity>
-    <bundle.web>2.2</bundle.web>
-    <bundle.widgetlab>1.4.1</bundle.widgetlab>
-    <bundle.xml>1.1</bundle.xml>
-    <bundle.javascript>2.1</bundle.javascript>
-    <bundle.issues-density>1.0</bundle.issues-density>
-  </properties>
+    <!-- Should we remove this? -->
+    <organization>
+        <name>excentia</name>
+        <url>http://www.excentia.es</url>
+    </organization>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.codehaus.sonar</groupId>
-      <artifactId>sonar-plugin-api</artifactId>
-      <version>${sonar.version}</version>
-      <scope>provided</scope>      
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar</groupId>
-      <artifactId>sonar-testing-harness</artifactId>
-      <version>${sonar.version}</version>
-    </dependency>
-    <!-- Dependencies to plugins which are translated by this language pack -->
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-abacus-plugin</artifactId>
-      <version>${bundle.abacus}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-branding-plugin</artifactId>
-      <version>${bundle.branding}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar</groupId>
-      <artifactId>sonar-core</artifactId>
-      <version>${bundle.core}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-jira-plugin</artifactId>
-      <version>${bundle.jira}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-useless-code-tracker-plugin</artifactId>
-      <version>${bundle.uselesscodetracker}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins.java</groupId>
-      <artifactId>sonar-java-plugin</artifactId>
-      <version>${bundle.java}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-violationdensity-plugin</artifactId>
-      <version>${bundle.violationdensity}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-widget-lab-plugin</artifactId>
-      <version>${bundle.widgetlab}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-motion-chart-plugin</artifactId>
-      <version>${bundle.motionchart}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-tab-metrics-plugin</artifactId>
-      <version>${bundle.tabmetrics}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-web-plugin</artifactId>
-      <version>${bundle.web}</version>
-      <scope>test</scope>
-    </dependency>    
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-thucydides-plugin</artifactId>
-      <version>${bundle.thucydides}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins.xml</groupId>
-      <artifactId>sonar-xml-plugin</artifactId>
-      <version>${bundle.xml}</version>
-      <scope>test</scope>
-    </dependency>     
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins.javascript</groupId>
-      <artifactId>sonar-javascript-plugin</artifactId>
-      <version>${bundle.javascript}</version>
-      <scope>test</scope>
-    </dependency>    
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-issues-density-plugin</artifactId>
-      <version>${bundle.issues-density}</version>
-      <scope>test</scope>
-    </dependency>          
-  </dependencies>
+    <licenses>
+        <license>
+            <name>GNU LGPL 3</name>
+            <url>http://www.gnu.org/licenses/lgpl.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
-  <developers>
-    <developer>
-      <name>Antonio Calero</name>
-      <organizationUrl>http://www.excentia.es</organizationUrl>
-    </developer>
-  </developers>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/SonarQubeCommunity/sonar-l10n-es/issues</url>
+    </issueManagement>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.sonar</groupId>
-        <artifactId>sonar-packaging-maven-plugin</artifactId>
-        <extensions>true</extensions>
-        <configuration>
-          <basePlugin>l10nen</basePlugin>
-          <pluginName>Spanish Pack</pluginName>
-        </configuration>
-      </plugin>
+    <scm>
+        <connection>scm:git:git://github.com/SonarQubeCommunity/sonar-l10n-es.git</connection>
+        <developerConnection>scm:git:git@github.com:SonarQubeCommunity/sonar-l10n-es.git</developerConnection>
+        <url>https://github.com/SonarQubeCommunity/sonar-l10n-es</url>
+        <tag>HEAD</tag>
+    </scm>
 
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>native2ascii-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>native2ascii</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
+    <properties>
+        <sonar.pluginClass>org.sonar.plugins.l10n.SpanishPackPlugin</sonar.pluginClass>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Versions of the plugin translated by this language pack -->
+        <sonarqube.version>6.7.3</sonarqube.version>
+        <!-- Versions of the plugin translated by this language pack -->
+        <bundle.abacus>0.1</bundle.abacus>
+        <bundle.branding>1.0</bundle.branding>
+        <bundle.core>5.1</bundle.core>
+        <bundle.jira>1.2</bundle.jira>
+        <bundle.motionchart>1.7</bundle.motionchart>
+        <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
+        <bundle.java>2.8</bundle.java>
+        <bundle.tabmetrics>1.4</bundle.tabmetrics>
+        <bundle.thucydides>0.1</bundle.thucydides>
+        <bundle.violationdensity>1.2</bundle.violationdensity>
+        <bundle.web>2.2</bundle.web>
+        <bundle.widgetlab>1.4.1</bundle.widgetlab>
+        <bundle.xml>1.1</bundle.xml>
+        <bundle.javascript>2.1</bundle.javascript>
+        <bundle.issues-density>1.0</bundle.issues-density>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.sonarsource.sonarqube</groupId>
+            <artifactId>sonar-plugin-api</artifactId>
+            <version>${sonarqube.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.sonarsource.sonarqube</groupId>
+            <artifactId>sonar-testing-harness</artifactId>
+            <version>${sonarqube.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>2.2.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Dependencies which are translated by this language pack -->
+        <dependency>
+            <groupId>org.sonarsource.sonarqube</groupId>
+            <artifactId>sonar-core</artifactId>
+            <version>${sonarqube.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-abacus-plugin</artifactId>
+            <version>${bundle.abacus}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-branding-plugin</artifactId>
+            <version>${bundle.branding}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar</groupId>
+            <artifactId>sonar-core</artifactId>
+            <version>${bundle.core}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-jira-plugin</artifactId>
+            <version>${bundle.jira}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-useless-code-tracker-plugin</artifactId>
+            <version>${bundle.uselesscodetracker}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins.java</groupId>
+            <artifactId>sonar-java-plugin</artifactId>
+            <version>${bundle.java}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-violationdensity-plugin</artifactId>
+            <version>${bundle.violationdensity}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-widget-lab-plugin</artifactId>
+            <version>${bundle.widgetlab}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-motion-chart-plugin</artifactId>
+            <version>${bundle.motionchart}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-tab-metrics-plugin</artifactId>
+            <version>${bundle.tabmetrics}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-web-plugin</artifactId>
+            <version>${bundle.web}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-thucydides-plugin</artifactId>
+            <version>${bundle.thucydides}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins.xml</groupId>
+            <artifactId>sonar-xml-plugin</artifactId>
+            <version>${bundle.xml}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins.javascript</groupId>
+            <artifactId>sonar-javascript-plugin</artifactId>
+            <version>${bundle.javascript}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar-plugins</groupId>
+            <artifactId>sonar-issues-density-plugin</artifactId>
+            <version>${bundle.issues-density}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <developers>
+        <developer>
+            <name>Rubén Melcón </name>
+            <organizationUrl>http://bahiasoftware.es</organizationUrl>
+        </developer>
+        <developer>
+            <name>Antonio Calero</name>
+            <organizationUrl>http://www.excentia.es</organizationUrl>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>native2ascii-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>native2ascii</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
+                <artifactId>sonar-packaging-maven-plugin</artifactId>
+                <version>1.15</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <basePlugin>l10nen</basePlugin>
+                    <pluginName>Spanish Pack</pluginName>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>
