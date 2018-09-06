@@ -216,10 +216,6 @@
                 <artifactId>sonar-packaging-maven-plugin</artifactId>
                 <version>1.15</version>
                 <extensions>true</extensions>
-                <configuration>
-                    <basePlugin>l10nen</basePlugin>
-                    <pluginName>Spanish Pack</pluginName>
-                </configuration>
             </plugin>
 
             <plugin>
