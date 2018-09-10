@@ -1,7 +1,7 @@
 /*
  * L10n :: Spanish Pack
- * Copyright (C) 2011 excentia
- * dev@sonar.codehaus.org
+ * Copyright (C) 2011-2018 SonarSource SA
+ * mailto:info AT sonarsource DOT com
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -13,21 +13,20 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Lesser General Public License for more details.
  *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 package org.sonar.plugins.l10n;
 
-import org.sonar.api.SonarPlugin;
-
+import org.sonar.api.Plugin;
 import java.util.Collections;
 import java.util.List;
 
 /**
  * Entry point for the spanish pack plugin
  */
-public final class SpanishPackPlugin extends SonarPlugin {
+public final class SpanishPackPlugin implements Plugin {
 
   /**
    * Retrieves the extensions included in the plugin. As it is language pack no 
@@ -36,5 +35,10 @@ public final class SpanishPackPlugin extends SonarPlugin {
    */
   public List getExtensions() {
     return Collections.emptyList();
+  }
+
+  @Override
+  public void define(Context context) {
+
   }
 }
