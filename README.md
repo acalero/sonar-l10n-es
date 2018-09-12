@@ -6,7 +6,7 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 ## Releases
 Releases can be installed directly via the Update Center page (browse Administration > System > Update Center). They can also be downloaded here.
 
-* Version 1.14 (hopefully in September 2018). [Download](https://github.com/rubenmelcon/sonar-l10n-es/releases/download/1.14/sonar-l10n-es-plugin-1.14.jar). Supports SonarQube 6.7.3.
+* Version 1.14 (September, 12, 2018). [Download]https://github.com/acalero/sonar-l10n-es/releases/download/sonar-l10n-es-plugin-1.14/sonar-l10n-es-plugin-1.14.jar). Supports SonarQube 6.7.3.
 
 ## Have questions or feedback?
 Have question or feedback?
