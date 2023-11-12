@@ -46,31 +46,16 @@
     <properties>
         <sonar.pluginClass>org.sonar.plugins.l10n.SpanishPackPlugin</sonar.pluginClass>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- Versions of the plugin translated by this language pack -->
-        <sonarqube.version>6.7</sonarqube.version>
-        <!-- Versions of the plugin translated by this language pack -->
-        <bundle.abacus>0.1</bundle.abacus>
-        <bundle.branding>1.0</bundle.branding>
-        <bundle.core>5.1</bundle.core>
-        <bundle.jira>1.2</bundle.jira>
-        <bundle.motionchart>1.7</bundle.motionchart>
-        <bundle.uselesscodetracker>1.0</bundle.uselesscodetracker>
-        <bundle.java>2.8</bundle.java>
-        <bundle.tabmetrics>1.4</bundle.tabmetrics>
-        <bundle.thucydides>0.1</bundle.thucydides>
-        <bundle.violationdensity>1.2</bundle.violationdensity>
-        <bundle.web>2.2</bundle.web>
-        <bundle.widgetlab>1.4.1</bundle.widgetlab>
-        <bundle.xml>1.1</bundle.xml>
-        <bundle.javascript>2.1</bundle.javascript>
-        <bundle.issues-density>1.0</bundle.issues-density>
+        <sonarqube.version>9.9.1.69595</sonarqube.version>
+        <sonar-plugin-api.version>10.0.0.695</sonar-plugin-api.version>
+        <junit.version>4.13.2</junit.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.sonarsource.sonarqube</groupId>
+            <groupId>org.sonarsource.api.plugin</groupId>
             <artifactId>sonar-plugin-api</artifactId>
-            <version>${sonarqube.version}</version>
+            <version>${sonar-plugin-api.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -85,101 +70,17 @@
             <version>2.2.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
         <!-- Dependencies which are translated by this language pack -->
         <dependency>
             <groupId>org.sonarsource.sonarqube</groupId>
             <artifactId>sonar-core</artifactId>
             <version>${sonarqube.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-abacus-plugin</artifactId>
-            <version>${bundle.abacus}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-branding-plugin</artifactId>
-            <version>${bundle.branding}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar</groupId>
-            <artifactId>sonar-core</artifactId>
-            <version>${bundle.core}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-jira-plugin</artifactId>
-            <version>${bundle.jira}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-useless-code-tracker-plugin</artifactId>
-            <version>${bundle.uselesscodetracker}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins.java</groupId>
-            <artifactId>sonar-java-plugin</artifactId>
-            <version>${bundle.java}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-violationdensity-plugin</artifactId>
-            <version>${bundle.violationdensity}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-widget-lab-plugin</artifactId>
-            <version>${bundle.widgetlab}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-motion-chart-plugin</artifactId>
-            <version>${bundle.motionchart}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-tab-metrics-plugin</artifactId>
-            <version>${bundle.tabmetrics}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-web-plugin</artifactId>
-            <version>${bundle.web}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-thucydides-plugin</artifactId>
-            <version>${bundle.thucydides}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins.xml</groupId>
-            <artifactId>sonar-xml-plugin</artifactId>
-            <version>${bundle.xml}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins.javascript</groupId>
-            <artifactId>sonar-javascript-plugin</artifactId>
-            <version>${bundle.javascript}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins</groupId>
-            <artifactId>sonar-issues-density-plugin</artifactId>
-            <version>${bundle.issues-density}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
